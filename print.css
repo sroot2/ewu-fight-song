@@ -1,0 +1,12 @@
+@media print {
+   /* hide */
+    audio { display: none;}
+/* print links */
+a[href]::after{
+    content: attr(href);
+}
+/* paper size */
+@page{
+    margin: 1in;
+}
+}
